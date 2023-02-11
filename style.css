@@ -108,7 +108,9 @@
  /* 2v */
 
 
+
 body{
+    position: fixed;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -149,8 +151,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     border: none;
     background-color: #00000025;
-
-    
+    color: black;    
     width: 25%;
     height: 30px;
 
@@ -169,6 +170,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     background-color: #00000025;
     border: none;
+    color: black;
 }
 
 .results{

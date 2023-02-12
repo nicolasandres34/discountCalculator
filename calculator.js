@@ -5,6 +5,12 @@ var otherValue = document.getElementById("otherValue");
 var price;
 var customValue;
 
+var title = document.getElementById("titleApp");
+var insertTitle = document.getElementById("insertTitle");
+var valorFinal = document.getElementById("finalPrice");
+var otroDescuento = document.getElementById("otherDisc");
+var finalPrice
+
 input.addEventListener("input", function() {
   price = this.value;
 //   console.log(price);
@@ -17,8 +23,9 @@ otherValue.addEventListener("input", function() {
 
 function customDiscount(){
 
-  if(customValue == null){
-    finalPrice.innerHTML ="You did not insert a percentage";
+  if(customValue == null && price == null || price == null || customValue == null){
+    finalPrice.innerHTML ="You did not insert a percentage or ammount to calculate.";
+    resultKn.innerHTML = "";
   }else{
 
   var porcentage = parseInt(customValue)/100;
@@ -35,7 +42,6 @@ function customDiscount(){
   resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
   }
 }
-
 
 
 function deset(){
@@ -145,4 +151,37 @@ function osamDeset(){
     resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
   }
   }
+
+
+  //Chile APP//
+
+  function engApp(){
+    title.innerHTML = "Discount Calculator"
+    insertPrice.innerHTML = "Insert the price below:"
+    otroDescuento.innerHTML = "Other Discount?"
+    valorFinal.innerHTML = "Your product costs:"
+  }
+
+  function chileApp(){
+
+    title.innerHTML = "Calculadora de Descuentos"
+    insertPrice.innerHTML = "Ingresa el precio abajo:"
+    otroDescuento.innerHTML = "Otro porcentaje de descuento?"
+    valorFinal.innerHTML = "Tu producto cuesta:"
+
+  }
+
+  function croApp(){
+
+    title.innerHTML = "Kalkulator Popusta"
+    insertPrice.innerHTML = "Unesite cijenu ispod:"
+    otroDescuento.innerHTML = "Drugi popust?"
+    valorFinal.innerHTML = "konačna cijena:"
+
+  }
+
+
+
+
+
 

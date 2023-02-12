@@ -120,11 +120,30 @@ body{
     padding: 2px;
 }
 
+.languages a{
+    text-decoration: none;
+}
+
 .languages button{
     background-color: white;
     border: none;
     margin: 3px;
 }
+
+.divisa{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.divisa a{
+    text-decoration: none;
+    margin: 2px;
+    width: 50%;
+    color: black;
+    background-color: #00000009;
+}
+
 
 .container{
     font-family: 'Quicksand', sans-serif;
@@ -208,6 +227,17 @@ body{
 .precioFinalKn{
     margin-top: 3px;
     font-size: 24px;
+}
+
+.clearButton{
+    background-color: #00000025;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    visibility: hidden;
+    width: 80%;
+    
 }
 
 

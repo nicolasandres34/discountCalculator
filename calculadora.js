@@ -2,7 +2,6 @@ var input = document.getElementById("price");
 var finalPrice = document.getElementById("result");
 var resultKn = document.getElementById("resultKn");
 var otherValue = document.getElementById("otherValue");
-var clearButton = document.getElementById("clearButton")
 var price;
 var customValue;
 
@@ -25,7 +24,7 @@ otherValue.addEventListener("input", function() {
 function customDiscount(){
 
   if(customValue == null && price == null || price == null || customValue == null){
-    finalPrice.innerHTML ="You did not insert a percentage or ammount to calculate.";
+    finalPrice.innerHTML ="No has insertado un precio o un porcentaje para calcular.";
     resultKn.innerHTML = "";
   }else{
 
@@ -35,13 +34,10 @@ function customDiscount(){
 
   var descuento = price * porcentage;
   var precioFinal = price - descuento;
-  var enKunas = precioFinal * 7.53;
 
   console.log(descuento);
 
-  finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-  resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
-
+  finalPrice.innerHTML = (precioFinal.toFixed(0)) + "CLP";
   clearButton.style.visibility = "visible";
   }
 }
@@ -50,115 +46,99 @@ function customDiscount(){
 function deset(){
 
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
 
     var descuento = price * 0.10;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + "CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function dvaDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
 
     var descuento = price * 0.20;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function triDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.30;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function cetrDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.40;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function petDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.50;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN";
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function sestDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.60;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN";
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function sedamDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.70;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN";
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
 function osamDeset(){
   if(price == null || price == 0){
-    finalPrice.innerHTML ="There is no price to calculate :(";
+    finalPrice.innerHTML ="No has ingresado ningun valor para calcular :(";
   }else{
     var descuento = price * 0.80;
     var precioFinal = price - descuento;
-    var enKunas = precioFinal * 7.53;
 
 
-    finalPrice.innerHTML = (precioFinal.toFixed(2)) + "€";
-    resultKn.innerHTML = (enKunas.toFixed(2)) + "KN"
+    finalPrice.innerHTML = (precioFinal.toFixed(0)) + " CLP";
     clearButton.style.visibility = "visible";
   }
   }
@@ -177,25 +157,12 @@ function osamDeset(){
   function chileApp(){
 
     title.innerHTML = "Calculadora de Descuentos"
-    insertPrice.innerHTML = "Ingresa el precio abajo."
+    insertPrice.innerHTML = "Ingresa el precio abajo:"
     otroDescuento.innerHTML = "Otro porcentaje de descuento?"
     valorFinal.innerHTML = "Tu producto cuesta:"
     clearButton.innerHTML ="Limpiar"
 
   }
-
-  function croApp(){
-
-    title.innerHTML = "Kalkulator Popusta"
-    insertPrice.innerHTML = "Unesite cijenu ispod:"
-    otroDescuento.innerHTML = "Drugi popust?"
-    valorFinal.innerHTML = "konačna cijena:"
-    clearButton.innerHTML ="Obriši"
-
-  }
-
-
-  //Limpiar
 
 
 

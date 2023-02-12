@@ -16,24 +16,24 @@
     <div class="container">
 
         <div class="divisa">
-            <a style="background-color:#00000025 ;" href="./index.html">EUR</a>
-            <a href="./calculadoraclp.html">CLP</a>
+            <a href="./index.html">EUR</a>
+            <a style="background-color:#00000025 ;" href="./calculadoraclp.html">CLP</a>
         </div>
 
         <div class="languages">
 
-            <button onclick="chileApp()">&#127464;&#127473;</button>   
-            <button onclick="croApp()">&#127469;&#127479;</button>   
-            <button onclick="engApp()">&#127482;&#127480;</button>      
+            <button onclick="chileApp()">&#127464;&#127473;</button>       
+            <button onclick="engApp()">&#127482;&#127480;</button>       
+
 
         </div>
 
         <div class="content">
-            <h1 id="titleApp" class="center">Discount Calculator</h1>
+            <h1 id="titleApp" class="center">Calculadora de Descuentos</h1>
 
-            <h3 id="insertPrice">Insert the price below:</h3>
+            <h3 id="insertPrice">Ingresa el precio abajo:</h3>
 
-            <input placeholder="Ex: 499" class="initialPrice" id="price">
+            <input placeholder="Ej: 9990" class="initialPrice" id="price">
 
                 <div class="buttons">
                     <button id="deset" onclick="deset()">10%</button>
@@ -49,20 +49,18 @@
                 
 
                 <div> 
-                    <h3 id="otherDisc">Other Discount?</h3>
-                    <input class="otroValor" id="otherValue" type="text" placeholder="Ex: 25%">
+                    <h3 id="otherDisc">Otro porcentaje de descuento?</h3>
+                    <input class="otroValor" id="otherValue" type="text" placeholder="Ej: 25%">
                     <button onclick="customDiscount()" class="okButton">OK</button>
                 </div>
 
             <div class="results">
 
-                <h1 id="finalPrice" class="finalPriceTitle">Your product costs: </h1>
+                <h1 id="finalPrice" class="finalPriceTitle">Tu producto cuesta: </h1>
 
                 <label class="precioFinal" id="result"></label>
-                <label class="precioFinalKn" id="resultKn"></label>
 
-
-                <a id="clearButton" class="clearButton" href="./index.html">Clear</a>
+                <a id="clearButton" class="clearButton" href="./calculadoraclp.html">Limpiar</a>
 
             </div>
             
@@ -72,7 +70,7 @@
 
     </div>
 
-  <script src="/calculator.js"></script>
+  <script src="/calculadora.js"></script>
     
 
 </body>
